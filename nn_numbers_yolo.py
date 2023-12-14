@@ -23,7 +23,6 @@ def main():
 
     if TRAIN: trainModel(dataset_path)
     if VALIDATE: validateModel()
-    #if TEST: testModel(dataset_path)
 
 if __name__ == '__main__':
     main()
