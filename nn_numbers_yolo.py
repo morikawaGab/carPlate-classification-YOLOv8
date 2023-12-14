@@ -7,7 +7,7 @@ VALIDATE = False
 
 def trainModel(dataset_path):
     model = YOLO('yolov8n-cls.pt')  # carrega um modelo pré-treinado
-    model.train(data=dataset_path, epochs=100, imgsz=240)
+    model.train(data=dataset_path, epochs=12, imgsz=240)
 
 def validateModel():
     path_to_best = './runs/classify/train/weights/best.pt'
